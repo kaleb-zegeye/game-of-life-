@@ -1,0 +1,66 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three columns: auto for buttons and 1fr for the canvas */
+    align-items: center; /* Vertically center items */
+    width: 100%; /* Ensures the container takes the full width */
+   /* Adds space between the elements */
+    background-color: #d3d3d3;
+   
+}
+
+#myCanvas {
+    justify-self: center; /* Centers the canvas within its grid cell */
+}
+
+.container .buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Adds space between the buttons */
+}
+#start {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 13px 23px;
+    border: 1px solid #222222;
+    transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+    background: #fff;
+    color: #222222;
+    position:relative;
+    position:relative;
+    margin-left: 20%;
+    margin-right: 20%;
+
+
+   
+   
+
+}
+#stop {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 13px 23px;
+    border: 1px solid #222222;
+    transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+    background: #fff;
+    color: #222222;
+    position:relative;
+    margin-left: 20%;
+    margin-right: 20%;
+
+
+
+}
+
+#start:hover, #stop:hover {
+    border-color: #000000;
+    background: #f7f7f7;
+}
